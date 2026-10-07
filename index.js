@@ -171,3 +171,4 @@ builder.defineStreamHandler(async ({ type, id }) => {
 const PORT = process.env.PORT || 7000;
 serveHTTP(builder.getInterface(), { port: PORT });
 console.log(`Addon de Anime ejecutándose en: http://localhost:${PORT}/manifest.json`);
+module.exports = builder.getInterface();
