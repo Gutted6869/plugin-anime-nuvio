@@ -1,0 +1,23 @@
+{
+  "id": "org.nuvio.animelatino",
+  "version": "1.0.0",
+  "name": "Anime Latino HD",
+  "description": "Catálogo completo de Anime (Series, Películas, OAVs) con audio Latino/Subtitulado en Español y máxima calidad 1080p.",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["anime", "series", "movie"],
+  "catalogs": [
+    {
+      "type": "anime",
+      "id": "anime_latino_popular",
+      "name": "Anime Popular (Latino/Sub)",
+      "extra": [{ "name": "search", "isRequired": false }]
+    },
+    {
+      "type": "anime",
+      "id": "anime_latino_recientes",
+      "name": "Últimas Emisiones",
+      "extra": [{ "name": "search", "isRequired": false }]
+    }
+  ],
+  "idPrefixes": ["anilist:"]
+}
